@@ -72,6 +72,16 @@ app.get('/api/github/following', requireAuth, function(req, res) {
 		res.json(response);
 	})
 })
+app.get('/api/github/:username/activity', requireAuth, function(req, res) {
+	// console.log(github)
+	github.events.getFromUser({
+		user: req.params.username
+	}, function(err, response) {
+		res.json(response)
+	})
+
+})
+
 app.listen(port, function(){
 	console.log('listening on port ' + port)
 })

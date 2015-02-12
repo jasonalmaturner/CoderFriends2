@@ -17,8 +17,13 @@ $routeProvider
 	}
 })
 .when('/friend/:github_username', {
-	templateUrl: 'templates/friend.html',
-	controller: 'friendCtrl'
+	templateUrl: 'views/friend/friend.html',
+	controller: 'friendCtrl',
+	resolve: {
+		events: function(githubService, $route) {
+			return githubService.getEvents($route.current.params.github_username);
+		}
+	}
 	
 })
 

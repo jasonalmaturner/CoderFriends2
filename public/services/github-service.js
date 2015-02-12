@@ -26,4 +26,18 @@ this.getFollowing = function() {
 	return deferred.promise;
 }
 
+this.getEvents = function(username) {
+	var deferred = $q.defer();
+	$http({
+		method: 'GET',
+		url: '/api/github/' + username + '/activity'
+	}).then(function(res){
+		console.log(res.data);
+		deferred.resolve(res.data)
+	}, function(err){
+		deferred.reject(err);
+	})
+	return deferred.promise;
+}
+
 })

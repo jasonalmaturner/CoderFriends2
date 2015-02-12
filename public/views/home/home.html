@@ -1,5 +1,5 @@
 {{test}}
-<div ng-repeat='friend in friends'>
-	id: {{friend.login}},
+<div class="stuff" ng-repeat='friend in friends'>
+	id: <a href="#/friend/{{friend.login}}">{{friend.login}}</a>,
 	profilepic: <img src="{{friend.avatar_url}}">
 </div>
