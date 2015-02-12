@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="coderFriends">
+<head>
+	<title>Coder Friends</title>
+</head>
+<body ng-controller="mainCtrl">
+
+<button ng-click="login()">Click Me</button>
+<a href="auth/github">Click me now</a>
+<ng-view></ng-view>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular-route.min.js'></script>
+<script src="app.js"></script>
+<script src="services/github-service.js"></script>
+<script src="mainCtrl.js"></script>
+<script src="views/friend/friendCtrl.js"></script>
+<script src="views/home/homeCtrl.js"></script>
+</body>
+</html>

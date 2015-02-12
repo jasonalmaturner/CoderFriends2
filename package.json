@@ -1,0 +1,28 @@
+{
+  "name": "CoderFriends",
+  "version": "0.0.0",
+  "description": "CoderFriends ============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonalmaturner/CoderFriends2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonalmaturner/CoderFriends2/issues"
+  },
+  "homepage": "https://github.com/jasonalmaturner/CoderFriends2",
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "cors": "^2.5.3",
+    "express": "^4.11.2",
+    "express-session": "^1.10.2",
+    "github": "^0.2.3",
+    "passport": "^0.2.1",
+    "passport-github": "^0.1.5"
+  }
+}
